@@ -1,0 +1,16 @@
+Make a user authentication system.
+If the user is authenticated:
+	enable the edit option
+else:
+	show the login, signup options.
+
+a url is entered.
+if it exists:
+	redirect to its post page
+if not:
+	redirect to an editpost page
+	when user submits:
+		redirect to its now existant post page
+
+Problems left to solve:
+None

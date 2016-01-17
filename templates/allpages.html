@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block controls %}
+
+{% endblock %}
+{% block content %}
+{% for p in posts %}
+{{p.url}}
+<br>
+{{p.content}}
+<br><br><br>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block controls %}
+	<div class="login box">
+	<a>Logged in as: <b>{{username}}</b></a>
+    |
+    <a class="login-link" href="/logout">Logout</a>
+    </div>
+    <div class="controls box">
+    <a class="login-link" href="{{url}}">View Original</a>
+    </div>
+{% endblock %}
+{% block content %}
+
+	<h2>Edit the content</h2>
+	<form method="post">
+		<label>
+			<div>Content</div>
+			<textarea name="content" class="wysihtml5-sandbox">{{content}}</textarea>
+		</label>
+		<input type="Submit">
+	</form>
+{% endblock %}

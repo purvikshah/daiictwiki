@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block controls %}
+	{% if user %}
+    <div class="login box">
+	<a>Logged in as: <b>{{user.username}}</b></a>
+    |
+    <a class="login-link" href="/logout">Logout</a>
+    </div>
+    <div class="controls box">
+    <a class="login-link" href="/_edit{{url}}">Edit</a>
+    </div>
+    {% else %}
+    <div class="login box">
+    <a class="login-link" href="/login">Login</a>
+    |
+    <a class="login-link" href="/signup">Signup</a>
+    </div>
+    {% endif %}
+{% endblock %}
+{% block content %}
+	
+	{% for line in content.splitlines() %}
+    {{line}}<br>
+	{% endfor %}
+    <br><br>
+    {{created.strftime("%b %d, %Y")}}
+{% endblock %}

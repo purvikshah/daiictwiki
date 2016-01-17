@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block controls %}
+
+{% endblock %}
+{% block content %}
+{% for u in users %}
+{{u.username}}
+<br>
+{{u.password}}
+<br><br><br>
+{% endfor %}
+{% endblock %}

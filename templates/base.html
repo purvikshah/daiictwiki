@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Wiki</title>
+  <link rel=stylesheet href="/static/main.css">
+</head>
+
+<body>
+    <a href="/">
+      <h1>The Wiki</h1>
+    </a>
+      {% block controls %}
+      {% endblock %}
+    <div class="clear"></div>
+    <div class="main" id="content">
+      {% block content %}
+      {% endblock %}
+    </div>
+</body>
+</html>
+
